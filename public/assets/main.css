@@ -1,0 +1,86 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 64px;
+}
+
+.half-size{
+    width: 40%;
+    background-color: rgb(128, 92, 120);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.side{
+    background-color: #aae;
+    width: 80%;
+    height: 200px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side1{
+    width: 90%;
+    height: 80%;
+}
+
+#side2{
+    width: 90%;
+    height: 80%;
+    position: relative;
+}
+
+#side2-text-part{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#hide-button{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#index-display{
+    margin: auto; 
+}
+
+.hide{
+    opacity: 0;
+}
+
+.txt-field{
+    margin-bottom: 16px;
+}
+
+#add-card-container{
+    width: 70%;
+    height: 70%;
+    background-color: #aae;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 5%;
+}
+
+@media screen and (max-width: 700px) {
+    #main-container{
+        flex-wrap: wrap;
+    }
+    .half-size{
+        width: 80%;
+        min-height: 600px;
+        margin-bottom: 64px;
+    }
+}

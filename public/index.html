@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Carder</title>
+    <link href="/main.css" rel="stylesheet" type="text/css">
+    <!--<link rel="icon" type="image/png" href="/images/favicon.png"/>-->
+</head>
+<body>
+    <div id="main-container">
+        <div id="cards-panel" class="half-size">
+
+            <label for="tag-names">Tag: </label>
+            <select name="tag-names" id="tag-drop-down">
+                
+            </select>
+            
+            <div id="card-container">
+                <div class="side">
+                    <div id=side1>mabaho</div>
+                </div>
+    
+                <div class="side">
+                    <div id=side2>
+                        <div id="side2-text-part"></div>
+                        <button id="hide-button">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="index-display">0/420</div>
+
+            <button id="prev-card">Back</button>
+            <button id="next-card">Next</button>
+        </div>
+
+        <div id="add-card-panel" class="half-size">
+            <div id="add-card-container">
+                <div>Side 1: <br></div>
+                <input type="text" id="add-side1" class="txt-field"><br>
+                <div>Side 2: <br></div>
+                <input type="text" id="add-side2" class="txt-field"><br>
+
+                <div>Tag: <br></div>
+                <input type="text" id="add-tag" class="txt-field"><br>
+
+                <button id="add-button">Add Card</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/main.js"></script>
+</body>
+</html>
